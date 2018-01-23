@@ -15,21 +15,21 @@ class FFMpegUtil(object):
 
 	def getResultFilePath(self,dirname):
 		path=os.path.dirname(os.path.realpath(__file__))
-		return path[:path.rindex('\\')]+"\\"+dirname
+		return path[:path.rindex('\\')]+"\\Result\\"+dirname
+
 
 	def getVideoPath(self,videoname):
 
 		pass
 
 	def runFFMpeg(self):
-		videopath=getVideoPath()
-		cmd=
-		pass
+		videopath=self.getResultFilePath('video')
+		comparapath=self.getResultFilePath('ComparaPic')
+		cmd=''
 
 
 
 if __name__=='__main__':
 	f=FFMpegUtil()
 	# f.createFFMpehPath('dddd')
-	x=f.getConparaPicPath()
-	print f.getConparaPicPath()
+	print(f.getResultFilePath('Video'))
