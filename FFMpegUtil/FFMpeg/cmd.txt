@@ -1,1 +1,0 @@
-ffmpeg -i "C:\Users\Administrator\PycharmProjects\LoadSpeed\Result\video\VID_20180123_154146\VID_20180123_154146.mp4" -r 1 -q:v 2 -f image2 pic-%03d.jpeg 
